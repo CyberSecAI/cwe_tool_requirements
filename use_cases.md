@@ -26,30 +26,18 @@ This content is extracted RCM-WG-250129.pptx which will be available https://git
 
 ---
 
+
+
 ## **User Scenarios**
-### **PSIRT Member Writing a Vulnerability Advisory**
-- **Available Information:** Bug reports, issue summaries, access to developers.
-- **Coding Knowledge:** General knowledge of vulnerability types and programming.
-- **Time Pressures:** High.
-- **Correctness Importance:** TBD (considering "correctness" vs. "completeness").
 
-### **Developer Fixing a Vulnerability**
-- **Available Information:** Source code, patches, bug reports, test results, proof-of-concept exploits.
-- **Coding Knowledge:** Strong understanding of programming, protocols, technology stacks, and vulnerabilities.
-- **Time Pressures:** High.
-- **Correctness Importance:** Low (focus is on fixing issues rather than precise CWE mapping).
-- **Additional Considerations:** Developers may learn of CWE mappings through external reports or tools.
 
-### **Vulnerability Researcher / Bug Bounty Hunter Reporting Vulnerabilities**
-- **Available Information:** May not have direct access to source code or patches.
-- **Coding Knowledge:** Varies widely depending on expertise.
-- **Time Pressures:** Minimal.
-- **Correctness Importance:** Moderate.
-- **Special Case:** Academic researchers mapping findings as part of their research.
+| Role | Available Information | Coding Knowledge | Time Pressures | Correctness Importance | Additional Considerations/Special Case |
+|------|---------------------|------------------|----------------|----------------------|----------------------------------|
+| PSIRT Member Writing a Vulnerability Advisory | Bug reports, issue summaries, access to developers | General knowledge of vulnerability types and programming | High | TBD (considering "correctness" vs. "completeness") | - |
+| Developer Fixing a Vulnerability | Source code, patches, bug reports, test results, proof-of-concept exploits | Strong understanding of programming, protocols, technology stacks, and vulnerabilities | High | Low (focus is on fixing issues rather than precise CWE mapping) | Developers may learn of CWE mappings through external reports or tools |
+| Vulnerability Researcher / Bug Bounty Hunter Reporting Vulnerabilities | May not have direct access to source code or patches | Varies widely depending on expertise | Minimal | Moderate | Academic researchers mapping findings as part of their research |
+| Product Manager Addressing Weaknesses at Scale | Bug reports, issue summaries, custom in-house weakness taxonomies | - | - | - | Likely dependent on correct mappings but does not do direct mapping themselves |
 
-### **Product Manager Addressing Weaknesses at Scale**
-- **Available Information:** Bug reports, issue summaries, custom in-house weakness taxonomies.
-- **Mapping Needs:** Likely dependent on correct mappings but does not do direct mapping themselves.
 
 ---
 
