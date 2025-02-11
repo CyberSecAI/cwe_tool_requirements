@@ -57,9 +57,14 @@ This content is extracted RCM-WG-250129.pptx which will be available https://git
   - **Minimum viable product definition.**
 
 
-# User Interaction
 
-## Questions
+TODO: add user scenarious for tool maintainer to:
+1. update the knowledge base e.g. to new version of CWE list
+2. update the knowledge base e.g. based on user input, responses, and logs
+
+# Questions
+
+## General
 
 1. Is there AuthN/AuthZ or can ANY user use?
 2. Is a user's context preserved e.g. when a user accesses the tool, do they see their previous context?
@@ -68,11 +73,55 @@ This content is extracted RCM-WG-250129.pptx which will be available https://git
 4. Is the tool available via an API, or browser only / interactive use?
 5. Note: the tool should be resilient i.e. auto-fallover if a model becomes inaccessible
 
-TODO: add user scenarious for tool maintainer to:
-1. update the knowledge base e.g. to new version of CWE list
-2. update the knowledge base e.g. based on user input, responses, and logs
 
 
+
+##  Questions Organized By Category To Understand User Requirements And System Architecture
+
+User Requirements & Workflow:
+1. How should the system handle different confidence levels in CWE mappings?
+2. What level of explanation do users need for each CWE mapping recommendation?
+3. Should users be able to save or export their mapping history?
+4. How should the system handle batch processing vs. single vulnerability analysis?
+5. Do users need the ability to collaborate or share mappings with team members?
+
+Input Handling:
+1. What file formats need to be supported for code/vulnerability submissions?
+2. Should there be a size limit on submitted code or documentation?
+3. How should the system handle incomplete or ambiguous vulnerability information?
+4. Should users be able to provide feedback on incorrect mappings?
+5. How should the system handle proprietary or sensitive code submissions?
+
+Security & Privacy:
+1. What data retention policies are needed for submitted code and vulnerabilities?
+2. How should user authentication and authorization be handled?
+3. What level of logging is required for audit purposes?
+4. How should the system handle potential data leakage in explanations?
+5. What security measures are needed to prevent prompt injection attacks?
+
+Technical Architecture:
+1. Should this be a standalone tool or integrated into existing security platforms?
+2. How will the system stay updated with the latest CWE database changes?
+3. What performance requirements exist for response times?
+4. How should the system scale with increasing user demand?
+5. What backup and recovery mechanisms are needed?
+
+Integration & APIs:
+1. What existing tools should this system integrate with?
+2. Should there be an API for programmatic access?
+3. How should the system handle version control system integration?
+4. What export formats should be supported for reports and findings?
+5. Should there be integration with bug tracking systems?
+
+Quality & Validation:
+1. How should the system validate its CWE mapping recommendations?
+2. What metrics should be tracked to measure system effectiveness?
+3. How should edge cases and unusual vulnerabilities be handled?
+4. What level of explanation is needed for rejected or low-confidence mappings?
+5. How should conflicts between different possible CWE mappings be resolved?
+
+
+# User Interaction
 
 ## Model
 
